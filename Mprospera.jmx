@@ -40,7 +40,7 @@
           </elementProp>
           <elementProp name="wolverine" elementType="Argument">
             <stringProp name="Argument.name">wolverine</stringProp>
-            <stringProp name="Argument.value">8230 </stringProp>
+            <stringProp name="Argument.value">8230</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">port wolverine</stringProp>
           </elementProp>
@@ -78,7 +78,7 @@
           </elementProp>
           <elementProp name="apkVersion" elementType="Argument">
             <stringProp name="Argument.name">apkVersion</stringProp>
-            <stringProp name="Argument.value">4.83-simplProduct</stringProp>
+            <stringProp name="Argument.value">4.84-simplProduct</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">versi apk</stringProp>
           </elementProp>
@@ -403,7 +403,7 @@ vars.put(&quot;rrn_co&quot;,random);
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Sync Sentra" enabled="false">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Sync Sentra" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
@@ -1235,14 +1235,15 @@ vars.put(&quot;rrn_co&quot;,random);
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;transmissionDateAndTime&quot;: &quot;${__time(uyyyMMddhhmmss)&quot;,&#xd;
+  &quot;transmissionDateAndTime&quot;: &quot;${__time(yyyyMMddhhmmss)}&quot;,&#xd;
   &quot;retrievalReferenceNumber&quot;: &quot;${rrn_co}&quot;,&#xd;
   &quot;username&quot;: &quot;${user_co}&quot;,&#xd;
   &quot;sessionKey&quot;: &quot;${sessionKey}&quot;,&#xd;
   &quot;imei&quot;: &quot;${imei}&quot;,&#xd;
   &quot;getCountData&quot;: &quot;500&quot;,&#xd;
   &quot;page&quot;: &quot;1&quot;&#xd;
-}</stringProp>
+}&#xd;
+</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -1316,7 +1317,7 @@ vars.put(&quot;rrn_co&quot;,random);
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;transmissionDateAndTime&quot;: &quot;${__time(uyyyMMddhhmmss)&quot;,&#xd;
+  &quot;transmissionDateAndTime&quot;: &quot;${__time(yyyyMMddhhmmss)}&quot;,&#xd;
   &quot;retrievalReferenceNumber&quot;: &quot;${rrn_co}&quot;,&#xd;
   &quot;username&quot;: &quot;${user_co}&quot;,&#xd;
   &quot;sessionKey&quot;: &quot;${sessionKey}&quot;,&#xd;
